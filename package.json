@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "@cucumber/cucumber": "^12.8.1",
+    "cucumber-js-extent": "^0.1.0",
+    "dotenv": "^17.4.2",
+    "playwright": "^1.59.1",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "tsconfig-paths": "^4.2.0"
+  },
+  "scripts": {}
+}
