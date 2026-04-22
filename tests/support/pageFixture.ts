@@ -10,7 +10,7 @@ export class PageFixture {
   constructor(newPage: Page) {
     this.page = newPage;
     this.loginPage = new loginPage(this.page);
-    this.addToCartpage = new addToCartPage();
+    this.addToCartpage = new addToCartPage(this.page);
   }
 
   getObject(): PageFixture {

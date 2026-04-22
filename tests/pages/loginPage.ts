@@ -1,4 +1,4 @@
-import { Locator, Page } from "playwright/test";
+import { Locator, Page, expect } from "playwright/test";
 
 export class loginPage {
   private usernameInput: Locator;
@@ -19,5 +19,9 @@ export class loginPage {
     await this.usernameInput.fill(username);
     await this.passwordInput.fill(password);
     await this.loginButton.click();
+    await expect(this.page).toHaveURL(
+      "https://rahulshettyacademy.com/client/#/dashboard/dash",
+      { timeout: 10000 },
+    );
   }
 }

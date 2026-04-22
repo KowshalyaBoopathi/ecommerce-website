@@ -10,3 +10,6 @@
 
 # .env folder
 1) create a .env folder to give the credentials and url
+
+# command to run
+npx cucumber-js --tags "@login"
